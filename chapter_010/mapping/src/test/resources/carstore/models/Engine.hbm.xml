@@ -1,0 +1,15 @@
+<hibernate-mapping>
+    <class name="carstore.models.Engine" table="engines">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="brand"
+                     column="id_brand"
+                     class="carstore.models.Brand"/>
+        <many-to-one name="model"
+                     column="id_model"
+                     class="carstore.models.Model"/>
+        <property name="type" column="type"/>
+        <property name="capacity" column="capacity"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,6 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: url("../images/forest-fog.jpg") no-repeat;
+    background-size: cover;
+}

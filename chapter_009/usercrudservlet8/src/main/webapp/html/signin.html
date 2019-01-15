@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/signin.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/signin.js"></script>
+</head>
+<body>
+
+<!-- Jumbotron. Header of a page -->
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Welcome, stranger</h1>
+    </div>
+</div>
+
+<!-- Log in/Sign up form -->
+
+    <div class="cont_center">
+
+        <div class="cont_login">
+            <div class="cont_info_log_sign_up">
+                <!-- LogIn form first screen -->
+                <div class="col_md_login">
+                    <div class="cont_ba_opcitiy">
+                        <h2>Log in</h2>
+                        <p>If you have an account</p>
+                        <button class="btn_login" onclick="openLogin()">Log in</button>
+                    </div>
+                </div>
+                <!-- SignUp form first screen -->
+                <div class="col_md_sign_up">
+                    <div class="cont_ba_opcitiy">
+                        <h2>Sign up</h2>
+                        <p> If you are here for the first time</p>
+                        <button class="btn_sign_up" onclick="openSignup()">Sign up</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cont_back_info">
+                <div class="cont_img_back_grey">
+                    <img src="../images/fog.jpg"
+                         alt=""/>
+                </div>
+            </div>
+
+            <div class="cont_forms">
+                <div class="cont_img_back_">
+                    <img src="../images/fog.jpg"
+                         alt=""/>
+                </div>
+
+                <!-- LogIn form second screen -->
+                <div class="cont_form_login">
+                    <a href="#" onclick="exitForms()"><i class="material-icons">__</i></a>
+                    <h2>Log in</h2>
+                    <input type="text" id="username" name="username" placeholder="Username"/>
+                    <input type="password" id="login" name="login" placeholder="Password"/>
+                    <button class="btn_login" onclick="makeLogin()">Log in</button>
+                </div>
+
+                <!-- SignUp form second screen -->
+                <div class="cont_form_sign_up">
+                    <a href="#" onclick="exitForms()"><i class="material-icons">__</i></a>
+                    <h2>Sign up</h2>
+                    <input type="text" id="username_sign" name="username_sign" placeholder="Username"/>
+                    <input type="email" id="email_sign" name="email_sign" placeholder="Email"/>
+                    <input type="password" id="login_sign" name="login_sign" placeholder="Password"/>
+                    <button class="btn_sign_up" onclick="makeSignUp()">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container" align="center">
+        <span class="text-muted">Made by Evgeny Khodzitskiy, evgeny.hodz@gmail.com, GitHub: <a
+                href="https://github.com/alittlemind">alittlemind</a></span>
+    </div>
+</footer>
+<!-- End of Footer -->
+</body>
+</html>

@@ -1,0 +1,103 @@
+<web-app>
+
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>evgenyhodz.servlets.AuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>EditRoleServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.EditRoleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditRoleServlet</servlet-name>
+        <url-pattern>/editrole</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteRoleServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.DeleteRoleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteRoleServlet</servlet-name>
+        <url-pattern>/deleterole</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateRoleServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.CreateRoleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateRoleServlet</servlet-name>
+        <url-pattern>/createrole</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SignInController</servlet-name>
+        <servlet-class>evgenyhodz.servlets.SignInController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SignInController</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DefaultServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.DefaultServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DefaultServlet</servlet-name>
+        <url-pattern>/default</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.CreateUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.DeleteUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditUserServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.EditUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditUserServlet</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowUsersServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.ShowUsersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowUsersServlet</servlet-name>
+        <url-pattern>/showall</url-pattern>
+    </servlet-mapping>
+</web-app>

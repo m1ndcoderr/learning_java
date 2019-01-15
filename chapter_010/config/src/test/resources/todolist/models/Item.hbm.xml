@@ -1,0 +1,10 @@
+<hibernate-mapping>
+    <class name="todolist.models.Item" table="itemlist">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="desc" column="description"/>
+        <property name="created" column="created"/>
+        <property name="done" column="done"/>
+    </class>
+</hibernate-mapping>

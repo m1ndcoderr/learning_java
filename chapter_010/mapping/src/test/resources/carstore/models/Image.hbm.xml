@@ -1,0 +1,8 @@
+<hibernate-mapping>
+    <class name="carstore.models.Image" table="images">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="url" column="url"/>
+    </class>
+</hibernate-mapping>

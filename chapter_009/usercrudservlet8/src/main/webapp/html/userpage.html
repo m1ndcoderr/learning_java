@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/userpage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/userpage.js"></script>
+</head>
+<body>
+<!-- Jumbo+buttons section -->
+<div class="jumbotron">
+    <div id="user_title"></div>
+    <p>
+        _________________________________________________________________________________________________________________</p>
+    <section class="buttons">
+        <div class="container">
+            <a class="btn btn-special" id="1">Edit account</a>
+            <a class="btn btn-special" id="2">Delete account</a>
+            <a class="btn btn-special" id="3">Show myself</a>
+            <a class="btn btn-special" id="4">Log out</a>
+        </div>
+    </section>
+</div>
+
+
+<!-- Edit user form below -->
+
+<div class="container" style="display: none" id="box-1">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Edit your
+                account</h1>
+            <div class="required-field-block">
+                <input type="text" placeholder="Username" id="us_ed_username" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <input type="text" placeholder="Email" id="us_ed_email" class="form-control">
+            <input type="text" placeholder="Country" id="us_ed_country" class="form-control">
+            <input type="text" placeholder="City" id="us_ed_city" class="form-control">
+            <button class="btn btn-special"
+                    style="background-color: transparent; margin-top: 15px; margin-bottom: -5px" id="user_edit_account">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Delete account form below -->
+
+<div class="container" style="display: none" id="box-2">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Delete
+                account</h1>
+            <div class="required-field-block">
+                <input type="text" placeholder="Username" id="us_delete_acc_username" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <div class="required-field-block">
+                <input type="text" placeholder="Login" id="us_delete_acc_login" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <p>
+            <p>Are you sure?</p>
+            <p style="margin-top: 10px">(Username and Login must be entered)</p>
+            <button class="btn btn-special"
+                    style="background-color: transparent; max-width: 100px; margin-bottom: -5px"
+                    id="us_del_account_yes">Yes
+            </button>
+            <button class="btn btn-special"
+                    style="background-color: transparent; max-width: 100px; margin-bottom: -5px" id="us_del_account_no">
+                No
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Show myself form below -->
+
+<div class="container" style="display: none;" id="box-3">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Your
+                account</h1>
+            <div id="personal_data"></div>
+            <button class="btn btn-special"
+                    style="background-color: transparent; max-width: 100px; margin-bottom: -5px"
+                    id="hide_show_me_form">HIDE
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Log out account form below -->
+
+<div class="container" style="display: none" id="box-4">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Are you
+                sure?</h1>
+            <button class="btn btn-special"
+                    style="background-color: transparent; max-width: 100px; margin-bottom: -5px" id="log_out_yes">Yes
+            </button>
+            <button class="btn btn-special"
+                    style="background-color: transparent; max-width: 100px; margin-bottom: -5px" id="log_out_no">No
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <p>Made by Evgeny Khodzitskiy, evgeny.hodz@gmail.com, GitHub:
+        <a href="https://github.com/alittlemind" target="_blank">alittlemind</a></p>
+</footer>
+<!-- End of Footer -->
+</body>
+</html>

@@ -1,0 +1,9 @@
+_________RESULTS:_________
+Name for searching : test.txt
+Directory of searching : C:\\
+C:\test.txt.txt
+Mask for searching : .txt
+Directory of searching : C:\\
+C:\devlist.txt
+C:\test.txt.txt
+C:\test2.txt.txt

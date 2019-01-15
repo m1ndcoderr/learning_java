@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/CreateUserValidation.js"></script>
+    <script src="../js/CreateUserShowTable.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/CreateUserView.css">
+</head>
+<body>
+<h1 align="center">Create user</h1>
+<!-- Don't froget to add validation below onsubmit -->
+<form action='#'>
+    <table id="createtable">
+        <tr>
+            <th> Username:</th>
+            <td><input type="text" name="name">
+            </td>
+        </tr>
+        <tr>
+            <th> Login:</th>
+            <td><input type="password" name="login">
+            </td>
+        </tr>
+        <tr>
+            <th> Email:</th>
+            <td><input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <th>Role id:</th>
+            <td><input type="number" name="role_id">
+            </td>
+        </tr>
+        <tr>
+            <th>Country:</th>
+            <td><input type="text" name="country"></td>
+        </tr>
+        <tr>
+            <th>City:</th>
+            <td><input type="text" name="city"></td>
+        </tr>
+        <tr>
+            <td colspan="2"> ______________________________</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Create" onclick="showTable(); return false;"></td>
+        </tr>
+    </table>
+</form>
+<br/>
+<br/>
+<table id="showtable"></table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<hibernate-mapping>
+    <class name="carstore.models.Advertisement" table="advertisements">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="user"
+                     column="id_user"
+                     class="carstore.models.User"/>
+        <many-to-one name="car"
+                     column="id_car"
+                     class="carstore.models.Car"/>
+        <many-to-one name="image"
+                     column="id_image"
+                     class="carstore.models.Image"/>
+        <property name="description" column="description"/>
+        <property name="sold" column="sold"/>
+        <property name="price" column="price"/>
+        <property name="date" column="create_date"/>
+    </class>
+</hibernate-mapping>

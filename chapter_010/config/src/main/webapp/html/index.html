@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Evgeny Khodzitskiy">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<h1 style="text-align: center">TODO List</h1>
+<table align="center">
+    <tr>
+        <th>
+            <button type="button" id="add_item">Add item</button>
+            <input type="text" placeholder="Write description here" id="add_item_desc">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" id="update_item">Update description</button>
+            <input type="number" placeholder="Write item ID here" id="upd_item_id">
+            <input type="text" placeholder="Write new description here" id="upd_item_desc">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" id="delete_item">Delete item</button>
+            <input type="number" placeholder="Write item ID here" id="delete_item_id">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" id="set_done_item">Set done/not done</button>
+            <input type="number" placeholder="Write item ID here" id="upd_item_done">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" id="show_list">Show all</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Show done items too <input type="checkbox" id="show_all_done">
+        </th>
+    </tr>
+</table>
+<br>
+<br>
+<div id="items_list" align="center">
+</div>
+</body>
+</html>

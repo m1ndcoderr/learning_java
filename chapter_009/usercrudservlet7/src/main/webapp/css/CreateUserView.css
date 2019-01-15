@@ -1,0 +1,17 @@
+table#createtable {
+    width: 400px;
+    margin: auto;
+    background-color: lightskyblue;
+    text-align: center;
+    border: solid;
+    border-color: black;
+}
+
+table#showtable {
+    width: 400px;
+    margin: auto;
+    background-color: lightgreen;
+    text-align: center;
+    border: solid;
+    border-color: black;
+}

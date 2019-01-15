@@ -1,0 +1,12 @@
+<hibernate-mapping>
+    <class name="carstore.models.User" table="users">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name"/>
+        <property name="password" column="password"/>
+        <property name="email" column="email"/>
+        <property name="phone" column="phone"/>
+        <property name="socialUrl" column="url"/>
+    </class>
+</hibernate-mapping>

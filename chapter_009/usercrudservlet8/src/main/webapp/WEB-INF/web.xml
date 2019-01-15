@@ -1,0 +1,144 @@
+<web-app>
+    <resource-ref>
+        <description>DataBase connection</description>
+        <res-ref-name>jdbc/users</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>usersdatabase.servlets.AuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>ShowAllUsers</servlet-name>
+        <servlet-class>usersdatabase.servlets.ShowAllUsers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowAllUsers</servlet-name>
+        <url-pattern>/showallusers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowAllRoles</servlet-name>
+        <servlet-class>usersdatabase.servlets.ShowAllRoles</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowAllRoles</servlet-name>
+        <url-pattern>/showallroles</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignIn</servlet-name>
+        <servlet-class>usersdatabase.servlets.SignIn</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignIn</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>usersdatabase.servlets.SignUp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateUser</servlet-name>
+        <servlet-class>usersdatabase.servlets.CreateUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateUser</servlet-name>
+        <url-pattern>/createuser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateRole</servlet-name>
+        <servlet-class>usersdatabase.servlets.CreateRole</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateRole</servlet-name>
+        <url-pattern>/createrole</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditUser</servlet-name>
+        <servlet-class>usersdatabase.servlets.EditUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditUser</servlet-name>
+        <url-pattern>/edituser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditRole</servlet-name>
+        <servlet-class>usersdatabase.servlets.EditRole</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditRole</servlet-name>
+        <url-pattern>/editrole</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteUser</servlet-name>
+        <servlet-class>usersdatabase.servlets.DeleteUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteUser</servlet-name>
+        <url-pattern>/deleteuser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteRole</servlet-name>
+        <servlet-class>usersdatabase.servlets.DeleteRole</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteRole</servlet-name>
+        <url-pattern>/deleterole</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TypeUsername</servlet-name>
+        <servlet-class>usersdatabase.servlets.TypeUsername</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TypeUsername</servlet-name>
+        <url-pattern>/typeusername</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogOut</servlet-name>
+        <servlet-class>usersdatabase.servlets.LogOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOut</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TypePersonalData</servlet-name>
+        <servlet-class>usersdatabase.servlets.TypePersonalData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TypePersonalData</servlet-name>
+        <url-pattern>/typepersonaldata</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ErrorManager</servlet-name>
+        <servlet-class>usersdatabase.servlets.ErrorManager</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorManager</servlet-name>
+        <url-pattern>/errormanager</url-pattern>
+    </servlet-mapping>
+
+</web-app>

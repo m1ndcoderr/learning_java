@@ -1,0 +1,58 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>AddItem</servlet-name>
+        <servlet-class>todolist.servlets.AddItem</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddItem</servlet-name>
+        <url-pattern>/additem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteItem</servlet-name>
+        <servlet-class>todolist.servlets.DeleteItem</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteItem</servlet-name>
+        <url-pattern>/deleteitem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateDesc</servlet-name>
+        <servlet-class>todolist.servlets.UpdateDesc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateDesc</servlet-name>
+        <url-pattern>/updatedesc</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateDone</servlet-name>
+        <servlet-class>todolist.servlets.UpdateDone</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateDone</servlet-name>
+        <url-pattern>/updatedone</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>GetAllItems</servlet-name>
+        <servlet-class>todolist.servlets.GetAllItems</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAllItems</servlet-name>
+        <url-pattern>/getall</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetUnfulfilledItems</servlet-name>
+        <servlet-class>todolist.servlets.GetUnfulfilledItems</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetUnfulfilledItems</servlet-name>
+        <url-pattern>/getunfulfilled</url-pattern>
+    </servlet-mapping>
+
+</web-app>

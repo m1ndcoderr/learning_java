@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/carstore</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">091772</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL95Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+
+        <mapping resource="carstore/models/Image.hbm.xml"/>
+        <mapping resource="carstore/models/WheelDrive.hbm.xml"/>
+        <mapping resource="carstore/models/Brand.hbm.xml"/>
+        <mapping resource="carstore/models/Transmission.hbm.xml"/>
+        <mapping resource="carstore/models/BodyStyle.hbm.xml"/>
+        <mapping resource="carstore/models/User.hbm.xml"/>
+        <mapping resource="carstore/models/Model.hbm.xml"/>
+        <mapping resource="carstore/models/Engine.hbm.xml"/>
+        <mapping resource="carstore/models/Car.hbm.xml"/>
+        <mapping resource="carstore/models/Advertisement.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>

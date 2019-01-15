@@ -1,0 +1,8 @@
+<hibernate-mapping>
+    <class name="carstore.models.WheelDrive" table="wheeldrives">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="type" column="type"/>
+    </class>
+</hibernate-mapping>

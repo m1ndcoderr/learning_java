@@ -1,0 +1,29 @@
+<hibernate-mapping>
+    <class name="carstore.models.Car" table="cars">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="brand"
+                     column="id_brand"
+                     class="carstore.models.Brand"/>
+        <many-to-one name="model"
+                     column="id_model"
+                     class="carstore.models.Model"/>
+        <many-to-one name="bodyStyle"
+                     column="id_bodystyle"
+                     class="carstore.models.BodyStyle"/>
+        <many-to-one name="engine"
+                     column="id_engine"
+                     class="carstore.models.Engine"/>
+        <many-to-one name="transmission"
+                     column="id_transmission"
+                     class="carstore.models.Transmission"/>
+        <many-to-one name="wheelDrive"
+                     column="id_wheeldrive"
+                     class="carstore.models.WheelDrive"/>
+        <property name="horsePowers" column="horsepowers"/>
+        <property name="productionYear" column="productionYear"/>
+        <property name="mileage" column="mileage"/>
+        <property name="color" column="color"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,7 @@
+url=jdbc:postgresql://localhost:5432/userstore
+username=postgres
+password=091772
+minSize=10
+maxSize=100
+maxIdleTime=10
+driverClass=org.postgresql.Driver

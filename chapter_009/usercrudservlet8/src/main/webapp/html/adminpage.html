@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/adminpage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/adminpage.js"></script>
+</head>
+<body>
+<div class="jumbotron">
+    <h1>User database</h1>
+    <p>Create, edit or delete accounts and roles
+    <p>_____________________________________________________________________________________________________________</p>
+    <section class="buttons">
+        <div class="container">
+            <a class="btn btn-special" id="1">Create user</a>
+            <a class="btn btn-special" id="2">Create role</a>
+            <a class="btn btn-special" id="3">Edit user</a>
+            <a class="btn btn-special" id="4">Edit role</a>
+            <a class="btn btn-special" id="5">Delete user</a>
+            <a class="btn btn-special" id="6">Delete role</a>
+            <a class="btn btn-special" id="7">Show all users</a>
+            <a class="btn btn-special" id="8">Show all roles</a>
+        </div>
+    </section>
+</div>
+
+<!-- Create User form below -->
+
+<div class="container" style="display: none" id="box-1">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Create user
+                form</h1>
+            <input type="text" placeholder="Username" name="username" id="cr_username" class="form-control">
+            <div class="required-field-block">
+                <input type="text" placeholder="Login (Password)" name="login" id="cr_login" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <div class="required-field-block">
+                <input type="email" placeholder="Email" name="email" id="cr_email" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <input type="number" placeholder="Role id" name="role_id" id="cr_role_id" class="form-control">
+            <input type="text" placeholder="Country" name="country" id="cr_country" class="form-control">
+            <input type="text" placeholder="City" name="city" id="cr_city" class="form-control">
+            <button class="btn btn-special" id="createUser"
+                    style="background-color: transparent; margin-top: 15px; margin-bottom: -5px">Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Create role form below -->
+
+<div class="container" style="display: none" id="box-2">
+    <div class="centered">
+        <form role="form" style="min-width: 300px" id="cr_form">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Create role
+                form</h1>
+            <div class="required-field-block">
+                <input type="text" placeholder="Enter new role name" id="rlname" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <button class="btn btn-special"
+                    style="background-color: transparent; margin-top: 15px; margin-bottom: -5px" id="createRole">Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Edit User form below -->
+
+<div class="container" style="display: none" id="box-3">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Edit user
+                form</h1>
+            <div class="required-field-block">
+                <input type="text" placeholder="Login to edit user" id="ed_login" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <div class="required-field-block">
+                <input type="text" placeholder="Username" id="ed_username" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <div class="required-field-block">
+                <input type="email" placeholder="Email" id="ed_email" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <input type="number" placeholder="Role ID" id="ed_role_id" class="form-control">
+            <div class="required-field-block">
+                <input type="text" placeholder="Country" id="ed_country" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <div class="required-field-block">
+                <input type="text" placeholder="City" id="ed_city" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <button class="btn btn-special"
+                    style="background-color: transparent; margin-top: 15px; margin-bottom: -5px" id="editUser">Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Edit role form below -->
+
+<div class="container" style="display: none" id="box-4">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Edit role
+                form</h1>
+            <div class="required-field-block">
+                <input type="number" placeholder="Role ID" id="role_id_to_edit" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <div class="required-field-block">
+                <input type="text" placeholder="Enter new role name" id="new_rolename" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <button class="btn btn-special"
+                    style="background-color: transparent; margin-top: 15px; margin-bottom: -5px" id="editRole">Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Delete user form below -->
+
+<div class="container" style="display: none" id="box-5">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">
+                Delete user form</h1>
+            <p>Delete by Login</p>
+            <div class="required-field-block">
+                <input type="text" placeholder="User's login" id="del_login" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <p>
+            <p>Delete by username</p>
+            <div class="required-field-block">
+                <input type="text" placeholder="User's name" id="del_username" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <button class="btn btn-special"
+                    style="background-color: transparent; margin-top: 15px; margin-bottom: -5px" id="deleteUser">Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Delete role form below -->
+
+<div class="container" style="display: none" id="box-6">
+    <div class="centered">
+        <form role="form" style="min-width: 300px">
+            <h1 style="color: white; font-family: 'Roboto', sans-serif; font-weight: bold; margin-top: -5px">Delete role
+                form</h1>
+            <div class="required-field-block">
+                <input type="number" placeholder="Enter role id here" id="del_role_id" class="form-control">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            <button class="btn btn-special"
+                    style="background-color: transparent; margin-top: 15px; margin-bottom: -5px" id="deleteRole">Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Show All users form below -->
+
+<div class="container" style="display: none" id="box-7"></div>
+
+<!-- Show All roles form below -->
+
+<div class="container" style="display: none" id="box-8"></div>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <p>Made by Evgeny Khodzitskiy, evgeny.hodz@gmail.com, GitHub:
+        <a href="https://github.com/alittlemind" target="_blank">alittlemind</a></p>
+</footer>
+<!-- End of Footer -->
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<web-app>
+    <servlet>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.CreateUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.DeleteUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditUserServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.EditUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditUserServlet</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowUsersServlet</servlet-name>
+        <servlet-class>evgenyhodz.servlets.ShowUsersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowUsersServlet</servlet-name>
+        <url-pattern>/showall</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,156 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>ShowAllAds</servlet-name>
+        <servlet-class>carstore.servlets.ShowAllAds</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowAllAds</servlet-name>
+        <url-pattern>/showallads</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListOfBrandsResponder</servlet-name>
+        <servlet-class>carstore.servlets.ListOfBrandsResponder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListOfBrandsResponder</servlet-name>
+        <url-pattern>/listofbrands</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListOfModelsResponder</servlet-name>
+        <servlet-class>carstore.servlets.ListOfModelsResponder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListOfModelsResponder</servlet-name>
+        <url-pattern>/listofmodels</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListOfBodyStylesResponder</servlet-name>
+        <servlet-class>carstore.servlets.ListOfBodyStylesResponder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListOfBodyStylesResponder</servlet-name>
+        <url-pattern>/listofbodystyles</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListOfEnginesResponder</servlet-name>
+        <servlet-class>carstore.servlets.ListOfEnginesResponder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListOfEnginesResponder</servlet-name>
+        <url-pattern>/listofengines</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListOfTransmissionsResponder</servlet-name>
+        <servlet-class>carstore.servlets.ListOfTransmissionsResponder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListOfTransmissionsResponder</servlet-name>
+        <url-pattern>/listoftransmissions</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListOfWheelDrivesResponder</servlet-name>
+        <servlet-class>carstore.servlets.ListOfWheelDrivesResponder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListOfWheelDrivesResponder</servlet-name>
+        <url-pattern>/listofwheeldrives</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CarKeeper</servlet-name>
+        <servlet-class>carstore.servlets.CarKeeper</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CarKeeper</servlet-name>
+        <url-pattern>/addadv</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignIn</servlet-name>
+        <servlet-class>carstore.servlets.SignIn</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignIn</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>carstore.servlets.SignUp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IdKeeper</servlet-name>
+        <servlet-class>carstore.servlets.IdKeeper</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IdKeeper</servlet-name>
+        <url-pattern>/idkeeper</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowCarDetails</servlet-name>
+        <servlet-class>carstore.servlets.ShowCarDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowCarDetails</servlet-name>
+        <url-pattern>/showcardetails</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>ImageKeeper</servlet-name>
+    <servlet-class>carstore.servlets.ImageKeeper</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>ImageKeeper</servlet-name>
+        <url-pattern>/imgload</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdvertisementCreator</servlet-name>
+        <servlet-class>carstore.servlets.AdvertisementCreator</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdvertisementCreator</servlet-name>
+        <url-pattern>/advcreator</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DataChecker</servlet-name>
+        <servlet-class>carstore.servlets.DataChecker</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DataChecker</servlet-name>
+        <url-pattern>/datachecker</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChangeSold</servlet-name>
+        <servlet-class>carstore.servlets.ChangeSold</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeSold</servlet-name>
+        <url-pattern>/changesold</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Quit</servlet-name>
+        <servlet-class>carstore.servlets.Quit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Quit</servlet-name>
+        <url-pattern>/quit</url-pattern>
+    </servlet-mapping>
+
+</web-app>

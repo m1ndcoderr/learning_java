@@ -1,0 +1,11 @@
+<hibernate-mapping>
+    <class name="carstore.models.Model" table="models">
+        <id name="id" type="int" column="id">
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="brand"
+                     column="id_brand"
+                     class="carstore.models.Brand"/>
+        <property name="model" column="model"/>
+    </class>
+</hibernate-mapping>
